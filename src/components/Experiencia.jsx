@@ -18,16 +18,38 @@ function Experiencia() {
             <motion.article
               key={`${item.periodo}-${item.cargo}`}
               className="linha-tempo-item"
-              initial={{ opacity: 0, x: indice % 2 === 0 ? -20 : 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.5 }}
+              initial={{
+                opacity: 0,
+                y: 24,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              viewport={{
+                once: true,
+                amount: 0.15,
+              }}
+              transition={{
+                duration: 0.45,
+                delay: indice * 0.08,
+              }}
             >
-              <div className="linha-tempo-marcador" />
-              <span className="linha-tempo-periodo">{item.periodo}</span>
+              <div className="linha-tempo-periodo-wrapper">
+                <span className="linha-tempo-periodo">
+                  {item.periodo}
+                </span>
+              </div>
+
+              <div className="linha-tempo-coluna">
+                <span className="linha-tempo-marcador" />
+              </div>
+
               <div className="linha-tempo-cartao">
                 <h3>{item.cargo}</h3>
+
                 <h4>{item.empresa}</h4>
+
                 <p>{item.descricao}</p>
               </div>
             </motion.article>
