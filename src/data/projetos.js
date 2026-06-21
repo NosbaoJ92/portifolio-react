@@ -1,0 +1,112 @@
+import {
+  CalendarDays,
+  FileSignature,
+  GraduationCap,
+  ListChecks,
+  MonitorSmartphone,
+  ShoppingCart,
+  Stethoscope,
+  TicketCheck,
+} from 'lucide-react'
+
+export const projetos = [
+  {
+    id: 1,
+    titulo: 'FastPOS — Sistema de PDV',
+    categoria: 'Sistema Web',
+    descricao:
+      'Frente de caixa completa com carrinho, pedidos, impressão de recibos, painel de produção, controle de usuários e interface responsiva.',
+    tecnologias: ['React', 'Vite', 'Firebase', 'Tailwind CSS'],
+    demonstracao: 'https://fastpos-pdv.vercel.app/',
+    repositorio: '#',
+    destaque: true,
+    Icone: ShoppingCart,
+    gradiente: 'gradiente-ciano',
+  },
+  {
+    id: 2,
+    titulo: 'Sistema de Chamados',
+    categoria: 'Sistema Web',
+    descricao:
+      'Plataforma para abertura e acompanhamento de chamados, redefinição de senha, perfis de acesso e implantação em ambiente Vercel.',
+    tecnologias: ['React', 'Firebase Auth', 'Firestore', 'Vercel'],
+    demonstracao: 'https://chamadossistema.vercel.app/login',
+    repositorio: '#',
+    destaque: true,
+    Icone: TicketCheck,
+    gradiente: 'gradiente-violeta',
+  },
+  {
+    id: 3,
+    titulo: 'Agendamento Médico',
+    categoria: 'Saúde',
+    descricao:
+      'Sistema de agenda clínica com médicos, especialidades, grade de horários, pacientes, relatórios e controle de acesso por perfil.',
+    tecnologias: ['React', 'Firebase', 'Lucide React', 'CSS'],
+    demonstracao: 'https://medicagenda.vercel.app/',
+    repositorio: '#',
+    destaque: true,
+    Icone: Stethoscope,
+    gradiente: 'gradiente-verde',
+  },
+  {
+    id: 4,
+    titulo: 'Painel de Chamada',
+    categoria: 'Atendimento',
+    descricao:
+      'Emissão e chamada de senhas em tempo real com painel para TV, operadores por guichê, filas prioritárias e comunicação via Socket.IO.',
+    tecnologias: ['React', 'Node.js', 'Socket.IO', 'Express'],
+    demonstracao: 'https://painel-chamada.vercel.app/',
+    repositorio: '#',
+    Icone: MonitorSmartphone,
+    gradiente: 'gradiente-laranja',
+  },
+  {
+    id: 5,
+    titulo: 'Assinatura de PDF',
+    categoria: 'Produtividade',
+    descricao:
+      'Aplicação para carregar documentos PDF, inserir assinatura em imagem, adicionar data e posicionar os elementos diretamente nas páginas.',
+    tecnologias: ['React', 'PDF.js', 'pdf-lib', 'Vite'],
+    demonstracao: '#',
+    repositorio: '#',
+    Icone: FileSignature,
+    gradiente: 'gradiente-rosa',
+  },
+  {
+    id: 6,
+    titulo: 'Plataforma de Cursos',
+    categoria: 'Educação',
+    descricao:
+      'Interface responsiva para cursos, módulos, progresso do aluno, menu lateral e componentes independentes para fácil manutenção.',
+    tecnologias: ['React', 'Vite', 'Tailwind CSS', 'shadcn/ui'],
+    demonstracao: '#',
+    repositorio: '#',
+    Icone: GraduationCap,
+    gradiente: 'gradiente-azul',
+  },
+  {
+    id: 7,
+    titulo: 'Lista de Compras Inteligente',
+    categoria: 'Utilidade',
+    descricao:
+      'Controle de compras com quantidades, edição de itens, limite de gastos, leitura de código de barras e experiência adaptada ao celular.',
+    tecnologias: ['React', 'ZXing', 'Context API', 'LocalStorage'],
+    demonstracao: 'https://listacomprasreact.vercel.app/',
+    repositorio: '#',
+    Icone: ListChecks,
+    gradiente: 'gradiente-amarelo',
+  },
+  {
+    id: 8,
+    titulo: 'Gestão de Agendas e Relatórios',
+    categoria: 'Gestão',
+    descricao:
+      'Ferramenta para fechamento mensal, consolidação de agendamentos, relatórios de faltosos, faturamento e produtividade.',
+    tecnologias: ['React', 'Firebase', 'Excel', 'Relatórios'],
+    demonstracao: '#',
+    repositorio: '#',
+    Icone: CalendarDays,
+    gradiente: 'gradiente-petroleo',
+  },
+]
